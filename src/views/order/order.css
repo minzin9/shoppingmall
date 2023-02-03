@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+}
+.payment, .title{
+    text-align: center;
+}
+.payment {
+    background-color: #4a5164;
+    font-size: 20px;
+    line-height: 56px;
+    color: #fff;
+}
+
+.delivery-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.pay_info {
+    font-size: 20px;
+    margin: 10px 0;
+}
+.info {
+    margin: 15px 0;
+}
+input {
+    width: 600px;
+    height: 35px;
+    border: solid 1px #c6c9d2;
+   display: block;
+}
+.line {
+    border-bottom: solid 2px black;
+    width: 600px;
+}
+.all_product {
+    margin-left: 20px;
+}
+.button {
+    width: 355px;
+    height: 38px;
+    margin: 10px 120px;
+}
+.section {
+    width: 750px;
+}

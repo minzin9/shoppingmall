@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>18team shoppingmall</title>
+    <!-- 아이콘 -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/elice-rabbit-favicon.png"
+    />
+    <!-- bulma css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+    <!-- 폰트 어썸: 아이콘 -->
+    <script
+      defer
+      src="https://kit.fontawesome.com/9daa42bcef.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- 커스텀 css, js -->
+    <link rel="stylesheet" href="/home/home.css" />
+    <script src="/home/home.js" type="module" defer></script>
+
+  </head>
+  <body>
+<!--이미지-->
+
+<!-- 헤더 -->
+<div id="container"></div>
+
+<!--메뉴 바-->
+<div id="sidebarContainer"></div>
+
+
+<script>
+    var index = 0;   
+    window.onload = function(){
+        slideShow();
+    }
+    
+    function slideShow() {
+    var i;
+    var x = document.getElementsByClassName("slide1");  
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";   
+    }
+    index++;
+    if (index > x.length) {
+        index = 1;  
+    }   
+    x[index-1].style.display = "block";  
+    setTimeout(slideShow, 4000);  
+ 
+}
+</script>
+ 
+<body>
+    <div class="div-container">
+<div style="text-align : center;">
+    <img class="slide1" src="/home/IMG_6473.png" width="700" height="500">
+  <img class="slide1" src="/home/IMG_0145.png"  width="700" height="500">
+  <img class="slide1" src="/home/IMG_0146.png"  width="700" height="500">
+  <img class="slide1" src="/home/IMG_0148.png" width="700" height="500">
+  <img class="slide1" src="/home/IMG_6255.png" width="700" height="500">
+  <img class="slide1" src="/home/IMG_6258.png" width="700" height="300">
+  
+  <img class="slide1" src="/home/IMG_7656.png" width="700" height="500">
+  <img class="slide1" src="/home/jiseung.png" width="700" height="500">
+</div>
+    </div>
+  </body>
+
+</html>
+

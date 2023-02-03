@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>주문 조회</title>
+    <link rel="stylesheet" href="orderconfirm.css">
+    <script src="orderconfirm.js" type="module" ref></script>
+        <!-- 아이콘 -->
+        <link
+        rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="/elice-rabbit-favicon.png"
+      />
+      <!-- bulma css -->
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+      />
+      <!-- 폰트 어썸: 아이콘 -->
+      <script
+        defer
+        src="https://kit.fontawesome.com/9daa42bcef.js"
+        crossorigin="anonymous"
+      ></script>
+</head>
+<body>
+
+          <!-- 헤더 -->
+<div id="container"></div>
+
+    <div id="header">
+        <strong class="title">마이페이지</strong>
+    </div>
+    <section id="my_info_box">
+        <p class="se_title">주문/배송 내역</p>
+        <!--주문 리스트-->
+            <table>
+                <thead>
+                    <tr>
+                        <th>주문번호</th>
+                        <th>상품명</th>
+                        <th>주문날짜</th>
+                        <th>주문상태</th>
+                    </tr>
+                </thead>
+                <tbody id="ordercontainer">
+                </tbody>
+            </table>
+        </div>
+    </section>
+</body>
+</html>

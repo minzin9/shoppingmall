@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>login</title>
+    <!-- 아이콘 -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/elice-rabbit-favicon.png"
+    />
+    <!-- bulma css 관련 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+    <!-- 폰트 어썸: 아이콘 -->
+    <script
+      defer
+      src="https://kit.fontawesome.com/9daa42bcef.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- 커스텀 css, js -->
+    <link rel="stylesheet" href="/login/login.css" />
+    <script src="/login/login.js" type="module" defer></script>
+
+  </head>
+  <body>
+
+    <!-- 헤더 -->
+<div id="container"></div>
+
+<!--메뉴 바(수정)-->
+<div id="sidebarContainer"></div>
+
+    <!-- 로그인 폼(Form) -->
+    <div class="login-form-container">
+      <form class="box login-form-box" id="loginForm">
+        <p class="title is-5 has-text-info">LOGIN</p>
+        <div class="field">
+          <label class="label" for="emailInput">EMAIL</label>
+          <div class="control">
+            <input
+              class="input"
+              id="emailInput"
+              type="email"
+              placeholder="abc@example.com"
+              autocomplete="on"
+            />
+          </div>
+        </div>
+
+        <div class="field mb-5">
+          <label class="label" for="passwordInput">PASSWORD</label>
+          <div class="control">
+            <input
+              class="input"
+              id="passwordInput"
+              type="password"
+              placeholder="********"
+              autocomplete="on"
+            />
+          </div>
+        </div>
+
+        <button class="button is-info is-fullwidth" id="submitButton">
+         SIGN IN
+        </button>
+      </form>
+    </div>
+    
+
+  </body>
+</html>
+

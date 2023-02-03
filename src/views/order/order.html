@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>주문 상세 페이지</title>
+    <script src="order.js" type="module" ref></script>
+    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+    <link rel="stylesheet" href="order.css">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/elice-rabbit-favicon.png"
+    />
+    <!-- bulma css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+    <!-- 폰트 어썸: 아이콘 -->
+    <script
+      defer
+      src="https://kit.fontawesome.com/9daa42bcef.js"
+      crossorigin="anonymous"
+    ></script>
+
+</head>
+<body>
+    
+          <!-- 헤더 -->
+<div id="container"></div>
+
+    <div class="payment">
+        <span>주문/결제</span>
+    </div>
+    <div class="delivery-container">
+    <!--배송지 정보-->
+    <section class="section">
+        <span id="info" >배송지정보</span>
+            <label for="name">이름*</label>  <input type="text" id="name" required>
+            <label for="phone_number">전화번호*</label>  <input type="text" id="phone_number" required>
+            <label for="address">주소*</label>  <input type="text" id="address_kakao" name="address" value= "이곳을 클릭하세요" readonly required>
+            <label for="detail_address">상세주소*</label>  <input type="text" id="detail_address" name="address" required>
+            <label for="memo">요청사항</label>  <input type="text" id="memo">
+    <!--결제 정보-->
+        <div class="pay_info" >
+            결제정보
+        </div>
+        <div class="line"></div>
+        <div class="info">
+            <p>주문상품</p>
+            <ul class="orderedProduct" id="orderedProduct"></ul>
+        </div>
+        <div class="info">
+            <span class="span">주문총액</span>
+            <span class="ordertotal" id="ordertotal"> </span>
+        </div>
+        <div class="info">
+            <span class="span">배송비</span>
+            <span class="deliveryFee" id="deliveryFee"></span>
+        </div>
+        <div class="line"></div>
+        <div class="info">
+            <span class="span">총 결제금액</span>
+            <span class="total-price" id="total-price"></span>
+        </div>
+        <button class="button" id="button">주문하기</button>
+    </div>  
+    </section>
+</body>
+</html>
